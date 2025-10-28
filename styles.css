@@ -8,18 +8,19 @@ text-align: center;
 }
 .projects { 
     display:flex; 
-    flex-wrap:wrap; 
+    flex-wrap:wrap;
+    justify-content: center; 
 } 
 .project {
-width: 30%;
+width: 40%;
 margin: 10px;
 padding: 20px 10px;
 background: rgb(156, 35, 86); /* pick a color */
-border-radius: 25%;
+border-radius: 15px;
 }
 .project img{
-width: 300px;
-height: 300px;
+width: 90%;
+height: auto;
 margin: 10px;
 border: 2px solid rgb(255, 255, 255); /* choose a color */
 display: block;
