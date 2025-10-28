@@ -1,36 +1,52 @@
 body {
-background: lavenderblush;
-font-family: Arial, Helvetica, sans-serif;
+  background: lavenderblush;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 h1 {
-color: lightpink;
-text-align: center;
+  color: lightpink;
+  text-align: center;
+  margin-top: 30px;
 }
+
 .projects { 
-    display:flex; 
-    flex-wrap:wrap;
-    justify-content: center; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 30px; /* adds consistent spacing between boxes */
+  padding: 30px;
 } 
+
 .project {
-width: 40%;
-margin: 10px;
-padding: 20px 10px;
-background: rgb(156, 35, 86); /* pick a color */
-border-radius: 15px;
+  width: 28%; /* fits about 3 across like in your example */
+  min-width: 300px;
+  background: rgb(156, 35, 86);
+  border-radius: 40px; /* more curved, like your example */
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
-.project img{
-width: 90%;
-height: auto;
-margin: 10px;
-border: 2px solid rgb(255, 255, 255); /* choose a color */
-display: block;
-margin: auto;
+
+.project img {
+  width: 90%; /* fits neatly inside box */
+  height: auto;
+  margin: 15px auto;
+  border: 2px solid white;
+  border-radius: 15px; /* rounds image corners */
+  display: block;
 }
-a { /* change the appearance of ALL links */
-text-decoration: none;
-color: rgb(221, 60, 89);
+
+a {
+  text-decoration: none;
+  color: rgb(221, 60, 89);
 }
-.project p { /* change the appearance of paragraph tags inside .project divs */
-text-align: center;
-margin: 15px;
+
+.project p {
+  text-align: center;
+  margin: 15px;
+  line-height: 1.4;
+  font-size: 0.95rem;
 }
